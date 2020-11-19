@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:gravity="right|bottom"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="80dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnAC"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn3_shape"
+            android:text="AC"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:onClick="acEvent" />
+
+        <Button
+            android:id="@+id/btnzhengfu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn3_shape"
+            android:text="+/-"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/btnPer"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="％"
+            android:textColor="@color/black"
+            android:background="@drawable/btn3_shape"
+            android:textSize="30dp"
+            android:onClick="perEvent"/>
+
+        <Button
+            android:id="@+id/btnChu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="÷"
+            android:background="@drawable/btn_yellow_shape"
+            android:textSize="30dp"
+            android:onClick="yunsuanEvent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:text="7"
+            android:background="@drawable/btn2_shape"
+            android:textSize="30dp"
+            android:onClick="numberEvent"/>
+d
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="8"
+            android:background="@drawable/btn2_shape"
+            android:textSize="30dp"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="9"
+            android:background="@drawable/btn2_shape"
+            android:textSize="30dp"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/btncheng"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="×"
+            android:background="@drawable/btn_yellow_shape"
+            android:textSize="30dp"
+            android:onClick="yunsuanEvent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:text="4"
+            android:background="@drawable/btn2_shape"
+            android:textSize="30dp"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="5"
+            android:background="@drawable/btn2_shape"
+            android:textSize="30dp"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="6"
+            android:background="@drawable/btn2_shape"
+            android:textSize="30dp"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/btnjian"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="－"
+            android:background="@drawable/btn_yellow_shape"
+            android:textSize="30dp"
+            android:onClick="yunsuanEvent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:text="1"
+            android:background="@drawable/btn2_shape"
+            android:textSize="30dp"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="2"
+            android:background="@drawable/btn2_shape"
+            android:textSize="30dp"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="3"
+            android:background="@drawable/btn2_shape"
+            android:textSize="30dp"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/btnjia"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="＋"
+            android:background="@drawable/btn_yellow_shape"
+            android:textSize="30dp"
+            android:onClick="yunsuanEvent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textSize="30dp"
+            android:background="@drawable/btn1_shape"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/btndian"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="."
+            android:background="@drawable/btn2_shape"
+            android:textSize="30dp"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/btndeng"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:text="＝"
+            android:background="@drawable/btn_yellow_shape"
+            android:textSize="30dp"
+            android:onClick="equalEvent"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
